@@ -29,7 +29,7 @@ class Player {
         boardElm.appendChild(this.domElement);
     }
     moveLeft() {
-        this.positionX = this.positionX - 5;
+        this.positionX--;
         this.domElement.style.left = this.positionX + "vw";
        //to test if its moving left:
        // console.log("new position...." + this.positionX)
@@ -37,7 +37,7 @@ class Player {
     }
 
     moveRight() {
-        this.positionX = this.positionX + 5;
+        this.positionX++;
         this.domElement.style.left = this.positionX + "vw";
         //we always start counting from the bottom left thats why move right and move left we have the same thing(left)
     
